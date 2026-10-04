@@ -1,7 +1,19 @@
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1; 
+}
 .custom-navbar,
 .custom-footer {
-  background-color:lightgray;
+  background-color: lavender;
 }
 
 .logo-img {
@@ -10,11 +22,38 @@
 }
 
 .custom-link {
-  color: rgb(14, 10, 10);
+  color: black;
 }
 
 .custom-link:hover {
   color: purple !important;
+}
+
+.responsive-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.responsive-text {
+  font-size: 14px;
+}
+
+@media (min-width: 600px) {
+  .responsive-heading {
+    font-size: 28px;
+  }
+  .responsive-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .responsive-heading {
+    font-size: 36px;
+  }
+  .responsive-text {
+    font-size: 18px;
+  }
 }
 
 .box {
