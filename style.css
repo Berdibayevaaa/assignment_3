@@ -1,0 +1,39 @@
+
+.custom-navbar,
+.custom-footer {
+  background-color:lightgray;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.custom-link {
+  color: rgb(14, 10, 10);
+}
+
+.custom-link:hover {
+  color: purple !important;
+}
+
+.box {
+  background-color: lightgray;
+  border: 1px solid gray;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  background-color: lavender;
+  min-height: 100%;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    min-height: auto;
+    margin-top: 15px;
+  }
+}
